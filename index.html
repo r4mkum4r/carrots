@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Carrots - website</title>
+    <style>
+      body {
+        color: #ff0000;
+      }
 
-<head>
-  <title>Carrots - website</title>
-  <style>
-    body {
-      color: #ff0000;
-    }
+      #second-para {
+        color: #0000ff;
+      }
 
-    #second-para {
-      color: #0000ff;
-    }
+      .para {
+        color: gray;
+      }
+    </style>
+  </head>
 
-    .para {
-      color: gray;
-    }
-  </style>
-</head>
+  <body>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim tempore perspiciatis beatae explicabo dicta officiis
+    natus saepe error quidem! Eius tempore quia ab quos dignissimos nisi, voluptate sapiente alias pariatur.
+    <!-- Class used for repititions in a page. -->
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque itaque repellendus voluptas excepturi sequi, enim
+      hic deleniti adipisci natus facere.
+    </p>
+    <!-- Tag is a wrapper. -->
+    <div>div element.</div>
+    <!-- ID refers to unique element in page. -->
+    <p id="second-para">para element.</p>
+    <p class="para">para element.</p>
 
-<body>
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim tempore perspiciatis beatae explicabo dicta officiis
-  natus saepe error quidem! Eius tempore quia ab quos dignissimos nisi, voluptate sapiente alias pariatur.
-  <!-- Class used for repititions in a page. -->
-  <p class="para">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque itaque repellendus voluptas excepturi sequi, enim
-    hic deleniti adipisci natus facere.
-  </p>
-  <!-- Tag is a wrapper. -->
-  <div>
-    div element.
-  </div>
-  <!-- ID refers to unique element in page. -->
-  <p id="second-para">
-    para element.
-  </p>
-  <p class="para">
-    para element.
-  </p>
+    <input type="text" class="text-1" /> <input type="text" class="text-2" /> <input type="text" class="text-3" />
+    <br />
+    <input type="checkbox" /> Check <br />
+    <select name="select" id="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
 
-  <input type="text" class="text-1">
-  <input type="text" class="text-2">
-  <input type="text" class="text-3">
-  <br>
-  <input type="checkbox"> Check
-  <br>
-  <select name="select" id="">
-    <option value="1">1</option>
-    <option value="2">2</option>
-  </select>
+    <script>
+      // to fetch first match - document.querySelector(*selector*);
+      // to fetch all matches - document.querySelectorAll(*selector*);
 
-  <script>
-    // to fetch first match - document.querySelector(*selector*);
-    // to fetch all matches - document.querySelectorAll(*selector*);
+      // variable
+      var abc = 100
 
-    // variable
-    var abc = 100;
+      var bcd
 
-    var bcd;
+      // bcd = 200;
 
-    // bcd = 200;
+      var a, b, c
 
-    var a, b, c;
+      a = b = 200
 
-    a = b = 200;
+      // function
+      function fn() {
+        console.log(arguments)
+      }
 
-    // function
-    function fn() {
-      console.log(arguments);
-    }
+      function queryInputValue(elem) {
+        return document.querySelector(elem).value
+      }
 
-    function queryInputValue(elem) {
-      return document.querySelector(elem).value;
-    }
+      var obj
 
-    var obj;
-
-    obj = {
-      val: 100,
-      query: queryInputValue('.text-1')
-    }
-  </script>
-  <script src="./objects.js"></script>
-</body>
-
+      obj = {
+        val: 100,
+        query: queryInputValue('.text-1')
+      }
+    </script>
+    <!-- <script src="./objects.js"></script> -->
+    <script src="./closures.js"></script>
+  </body>
 </html>
